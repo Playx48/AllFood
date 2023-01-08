@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+body {
+	min-width: 1380px;
+	font-family: "Raleway", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #01170A;
+
+	background-color: #F7F7FA;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.nav {
+	margin-top: 30px;
+}
+
+fieldset {
+	padding: 0;
+	border: 0;
+}
+
+a, button {
+	cursor: pointer;
+	text-decoration: none;
+	color: #01170A;
+	&:focus {
+		opacity: 1;
+	}
+	&:hover {
+		opacity: 0.6;
+		transition: 0.7s;
+	}
+	&:active {
+		opacity: 0.2;
+	}
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+  	border: 0;
+  	padding: 0;
+  	white-space: nowrap;
+  	clip-path: inset(100%);
+  	clip: rect(0 0 0 0);
+  	overflow: hidden;
+}
+
+.container {
+	width: 1380px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	padding-top: 30px;
+}
+
+.title {
+	@include title;
+}
+
